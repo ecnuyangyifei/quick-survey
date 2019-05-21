@@ -3,14 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {FormsModule} from '@angular/forms'
+import { HttpClientModule } from '@angular/common/http';
+import { SurveyComponent } from './survey/survey.component';
+import { DataComponent } from './data/data.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SurveyComponent,
+    DataComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
